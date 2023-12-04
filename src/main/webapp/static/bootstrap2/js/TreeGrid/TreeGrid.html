@@ -1,0 +1,191 @@
+<HTML>
+<HEAD>
+<TITLE>树状图</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="EditPlus">
+	<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="TreeGrid.js"></script>
+	<script type="text/javascript" src="data.js"/></script>
+	<link type="text/css" rel="stylesheet" href="TreeGrid.css"/>
+</HEAD>
+
+<BODY>
+	<input type="button" value="关闭所有节点" onclick="expandAll('N')">
+	<input type="button" value="展开所有节点" onclick="expandAll('Y')">
+	<input type="button" value="取得当前行的数据" onclick="selectedItem()">
+	<input type="button" value="全选/全不选" onclick="selectAll()">
+	<input type="button" value="查看选中情况" onclick="showChecked()">
+	<br>
+	<br>
+	当前选中的行：<input type="text" id="currentRow" size="110">
+
+	<div id="div1"></div>
+
+	<script language="javascript">
+	
+		var config = {
+			id: "tg1",
+			width: "800",
+			renderTo: "div1",
+			headerAlign: "left",
+			headerHeight: "30",
+			dataAlign: "left",
+			indentation: "20",
+			folderOpenIcon: "images/folderOpen.gif",
+			folderCloseIcon: "images/folderClose.gif",
+			defaultLeafIcon: "images/defaultLeaf.gif",
+			hoverRowBackground: "false",
+			folderColumnIndex: "1",
+			itemClick: "itemClickEvent",
+			columns:[
+				{headerText: "", headerAlign: "center", dataAlign: "center", width: "20", handler: "customCheckBox"},
+				{headerText: "地名", dataField: "name", headerAlign: "center", handler: "customOrgName"},
+				{headerText: "简写", dataField: "code", headerAlign: "center", dataAlign: "center", width: "100"},
+				{headerText: "负责人", dataField: "assignee", headerAlign: "center", dataAlign: "center", width: "100"},
+				{headerText: "查看", headerAlign: "center", dataAlign: "center", width: "50", handler: "customLook"}
+			],
+			data:dataSet
+		};
+
+		/*
+			单击数据行后触发该事件
+			id：行的id
+			index：行的索引。
+			data：json格式的行数据对象。
+		*/
+		function itemClickEvent(id, index, data){
+			jQuery("#currentRow").val(id + ", " + index + ", " + TreeGrid.json2str(data));
+		}
+		
+		/*
+			通过指定的方法来自定义栏数据
+		*/
+		function customCheckBox(row, col){
+			return "<input type='checkbox' name='city_name'  onclick='selCk(this)'  id='"+row.code+"'>";
+		}
+
+		function customOrgName(row, col){
+			var name = row[col.dataField] || "";
+			return name;
+		}
+
+		function customLook(row, col){
+			return "<a href='' style='color:blue;'>查看</a>";
+		}
+		
+		
+		//------------------
+		//获得选中的数据Code
+		function showChecked()
+		{
+			var resArr =$("input[name='city_name']");
+
+			var codeId='';
+			resArr.each(function()
+				{
+					if($(this).attr("checked") == true)
+					{
+						var curId=$(this).attr("id");
+						
+						if(curId!="")
+						{
+							codeId=codeId+curId+",";
+						}
+						
+					}
+					
+				});
+				
+				if(codeId=="")
+				{
+					confirm("你未勾选如何资源！");
+				}else
+				{
+					alert("你选中的资源Code是:"+codeId.substring(0,codeId.length-1));
+				}
+		}
+		
+		
+		//级联选中、取消选中
+		//(取消)选中父节点，其子节点自动(取消)选中
+		function selCk(ck)
+		{
+			var ckId = $(ck).attr("id");
+			var tr = $(ck).parent().parent();
+	
+			treeGrid.checkSubs(tr.attr("id"),$(ck).attr("checked"));
+		}
+		
+		
+		//全选或是全不选
+		var isSelectAll=false;
+		function selectAll()
+		{
+		if(!isSelectAll)
+			{
+				$("input[name='city_name']").attr('checked',true);
+				isSelectAll=true;
+			}else
+			{
+				$("input[name='city_name']").attr('checked',false);
+				isSelectAll=false;
+			}
+			
+		}
+		
+		
+		
+		//创建一个组件对象
+		var treeGrid = new TreeGrid(config);
+		treeGrid.show();
+		
+		/*
+			展开、关闭所有节点。
+			isOpen=Y表示展开，isOpen=N表示关闭
+		*/
+		function expandAll(isOpen){
+			treeGrid.expandAll(isOpen);
+		}
+		
+		/*
+			取得当前选中的行，方法返回TreeGridItem对象
+		*/
+		function selectedItem(){
+			var treeGridItem = treeGrid.getSelectedItem();
+			if(treeGridItem!=null){
+				//获取数据行属性值
+				alert(treeGridItem.id + ", " + treeGridItem.index + ", " + treeGridItem.data.name);
+				
+				//获取父数据行
+				var parent = treeGridItem.getParent();
+				if(parent!=null){
+					console.log(parent);
+					alert("parent："+parent.data.name);
+					//jQuery("#currentRow").val(parent.data.name);
+				}else{
+					alert("选中节点没有父节点");
+				}
+				
+				//获取子数据行集
+				var children = treeGridItem.getChildren();
+				
+				//暂时无法获得选中节点的子节点的名称
+				if(children!=null && children.length>0){
+					var child_id='';
+					for(var i=0;i<children.length;i++)
+					{
+						console.log(children[i]);
+						child_id=child_id+children[i].id+',';
+					}
+					alert("选中节点子节点的ID:"+child_id.substring(0,child_id.length-1));
+					
+					//jQuery("#currentRow").val(children[0].data.name);
+				}else{
+					alert("选中节点没有子节点");
+				}
+			}
+		}
+	</script>
+
+</BODY>
+</HTML>

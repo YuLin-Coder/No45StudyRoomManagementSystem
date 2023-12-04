@@ -1,0 +1,26 @@
+
+{"data":
+[{"check":"","id":"SBNVG001","name":"川LMY236","type":"扫路车","sta":"可使用","work":"工作中","rode":"1.36万公里","num":"5次","time":"2015-10-12","sale":"28.6万","loca":"经济开发区","change":"正常","oper":"1"},
+  {"check":"","id":"SBNVG002","name":"川LCV758","type":"清洗车","sta":"可使用","work":"工作中","rode":"0.89万公里","num":"0次","time":"2016-7-03","sale":"25.1万","loca":"市中区","change":"正常","oper":"1"},
+  {"check":"","id":"SBNVG003","name":"川LWZ286","type":"洒水车","sta":"可使用","work":"工作中","rode":"1.55万公里","num":"0次","time":"2015-05-24","sale":"20.7万","loca":"东兴区","change":"正常","oper":"1"},
+  {"check":"","id":"SBNVG004","name":"川LLN198","type":"吸粪车","sta":"可使用","work":"未工作","rode":"0.36万公里","num":"0次","time":"2016-8-02","sale":"29.8万","loca":"隆昌县","change":"正常","oper":"1"},
+  {"check":"","id":"SBNVG005","name":"川LCN263","type":"电动三轮车","sta":"可使用","work":"工作中","rode":"0.1万公里","num":"0次","time":"2016-3-15","sale":"0.6万","loca":"威远县","change":"不正常","oper":"1"},
+  {"check":"","id":"SBNVG006","name":"川LGF587","type":"扫路车","sta":"可使用","work":"工作中","rode":"1.83万公里","num":"3次","time":"2015-11-11","sale":"28.6万","loca":"资中县","change":"不正常","oper":"1"},
+  {"check":"","id":"SBNVG007","name":"川LLK398","type":"酒水车","sta":"可使用","work":"工作中","rode":"2.63万公里","num":"1次","time":"2015-1-10","sale":"25.5万","loca":"经济开发区","change":"不正常","oper":"1"},
+  {"check":"","id":"SBNVG008","name":"川LVN748","type":"酒水车","sta":"可使用","work":"工作中","rode":"1.75万公里","num":"0次","time":"2016-1-12","sale":"25.4万","loca":"经济开发区","change":"正常","oper":"1"},
+  {"check":"","id":"SBNVG009","name":"川LPO586","type":"扫路车","sta":"维修中","work":"工作中","rode":"1.68万公里","num":"2次","time":"2015-3-16","sale":"28.6万","loca":"经济开发区","change":"正常","oper":"1"},
+  {"check":"","id":"SBNVG0010","name":"川LXD801","type":"清洗车","sta":"可使用","work":"工作中","rode":"1.02万公里","num":"0次","time":"2016-2-30","sale":"23.2万","loca":"经济开发区","change":"正常","oper":"1"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+]}

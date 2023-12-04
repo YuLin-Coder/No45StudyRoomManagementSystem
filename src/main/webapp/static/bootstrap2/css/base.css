@@ -1,0 +1,51 @@
+/*css reset*/
+/*html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td , i{*/
+	/*margin:0;*/
+	/*padding:0;*/
+	/*border:0;*/
+	/*font-weight:inherit;*/
+	/*font-style:inherit;*/
+	/*font-size:100%;*/
+	/*font-family:inherit;*/
+	/*vertical-align:baseline;*/
+/*}*/
+*{padding: 0;margin: 0}
+body,div,p,ul,li,img,h4,h5,input,td,th,textarea,table,iframe,h1,h2,h3,button,label{ margin: 0; padding: 0;}
+.laydate_body .laydate_top{height: 36px !important;}
+.laydate_body .laydate_bottom{padding: 15px !important;}
+.clear{clear: both}
+body {line-height:1.5;}
+table {border-collapse: collapse;border-spacing:0;}
+caption, th, td ,b,strong{text-align:left;font-weight:normal;}
+table, td, th {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:"";}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+em,cite{font-style:normal;}
+
+
+body { background:#fff; font: 12px/1.5 Tahoma,'宋体';color:#000;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#111;}
+a {text-decoration:none;cursor:pointer;}
+dl, dt, dd, ol, ul, li{ list-style:none;}
+
+/*some common class*/
+.left{float:left;}
+.right{float:right;}
+
+/*clear*/
+.ue-clear:after{content: "";display:block;height:0;clear:both;visibility:hidden;}
+.ue-clear{display:inline-block;}
+*html .ue-clear{height:1%;}
+.ue-clear{display:block ; overflow:hidden;}
+
+.placeholder{color:#ddd;}
+
+.button{display:inline-block;width:135px; height:35px; background:url(../images/dialog_btnbg.png);border:none; border-radius:3px;color:#fff; font-size:16px; cursor:pointer; font-family:'Microsoft Yahei','微软雅黑';outline:none;}
+.button.normal{width:133px; height:33px;background:url(../images/dialogbtn.png);color:#000;border:1px solid #c0c0c0;}
+.button:active{}
+.button.long2{width:100px;}
+
+.select-wrap ul{ display:none; background:#fff;position:absolute; left:0; top:30px;  width:260px; border:1px solid #c5d6e0;border-top:none;z-index: 222;}
+.select-wrap ul li{ padding-left:10px; line-height:28px; cursor:pointer;}
+.select-wrap ul li:hover{ background:url(../images/formbtnbg.png) repeat-x;}

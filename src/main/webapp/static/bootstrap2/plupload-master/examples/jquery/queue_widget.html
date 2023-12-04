@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+<title>文件上传</title>
+
+<link rel="stylesheet" href="../../js/jquery.plupload.queue/css/jquery.plupload.queue.css" type="text/css" media="screen" />
+<script type="text/javascript" src="../../../js/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="../../js/plupload.full.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.plupload.queue/jquery.plupload.queue.js"></script>
+	<style>
+		.plupload_wrapper {border: 1px solid #aaaaaa !important;padding: 0}
+		.plupload_header{border: 1px solid #d3d3d3;background: #e6e6e6;font-weight: normal;color: #000; }
+		.plupload_container{padding: 0 !important;}
+		.plupload_header_content{color: #000}
+		.plupload_filelist{background-color: #fff}
+		.plupload_filelist_footer{border-top:1px #aaaaaa solid}
+		.l_left{float: left}
+		.r_right{float: right}
+		.notice_bot{position: fixed;bottom: 0;background-color: #ecf0f5;padding: 5px 0 5px 0;z-index:9999;width: 100%;}
+		.notice_bot>div{font-size: 12px;margin-left: 10px;color: #07141e;line-height: 28px}
+		.notice_bot>div input{margin-right: 2px;vertical-align: middle}
+		.div_form{margin:4% auto 0 auto;width: 90% }
+		.div_form>div{margin: 5px}
+		.but_p{margin-right: 10px}
+		.but_p button{width: 58px;height: 28px;line-height: 28px;border: none;background-color: #5cb85c;color: #fff;border-radius: 4px;cursor: pointer}
+	</style>
+</head>
+<body style="font: 13px Verdana; background: #eee; color: #333">
+<form method="post" action="dump.php">	
+	<div id="uploader">
+		<p>Your browser doesn't have Flash, Silverlight or HTML5 support.</p>
+	</div>
+
+</form>
+
+<div class="notice_bot">
+	<div class="l_left"><input type="checkbox" checked="checked"/>完成并关闭窗口</div>
+	<div class="r_right but_p"><button class="but_save" style="margin-right: 8px" onclick="Cancel()">完成</button></div>
+</div>
+
+<script type="text/javascript">
+	function Cancel() {
+		var index = parent.layer.getFrameIndex(window.name);
+		parent.layer.close(index);
+	}
+$(function() {
+	$("#uploader").pluploadQueue({
+		runtimes : 'html5,flash,silverlight,html4',
+		url : '../upload.php',
+		chunk_size: '1mb',
+		rename : true,
+		dragdrop: true,
+		
+		filters : {
+			// Maximum file size
+			max_file_size : '10mb',
+			// Specify what files to browse for
+			mime_types: [
+				{title : "Image files", extensions : "jpg,gif,png"},
+				{title : "Zip files", extensions : "zip"}
+			]
+		},
+
+		// Resize images on clientside if we can
+		resize : {width : 320, height : 240, quality : 90},
+
+		flash_swf_url : '../../js/Moxie.swf',
+		silverlight_xap_url : '../../js/Moxie.xap'
+	});
+
+});
+</script>
+
+</body>
+</html>

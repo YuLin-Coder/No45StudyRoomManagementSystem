@@ -1,0 +1,91 @@
+/*模态框*/
+.modal-box {
+/*绝顶定位 相对于当前浏览器*/
+	position: fixed;
+	width: 700px;
+	/*设置为白色背景  前期可以设置为其他颜色  方便观看*/
+	background-color: white;
+	top: 0;
+	left: 26%;
+	margin-top: 30px;
+	border-radius: 7px;
+	/*解决高度塌陷的问题*/
+	overflow: hidden;
+	/*z-index 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面*/
+	/*比如在fixed定位中，z-index100大小的会覆盖在50大小的上面*/
+	z-index: 111;
+	border: 1px solid #400040;
+	/*用display的话没有物理宽高  便于js控制*/
+	/*visibility: hidden;先不要加  否则浏览器不会显示出来，*/
+	/*visibility: hidden;*/
+}
+	
+/*小的模态框*/
+.modal-min {
+	width: 700px;
+}
+	
+/*大的模态框*/
+.modal-max {
+	width: 700px;
+}
+	
+/*模态框顶部*/
+.modal-box-top {
+/*相对于之前自己的位置定位，这个设置不会影响元素的位置，会影响子元素使用absolute定位 先不管*/
+	position: relative;
+	/*宽度随父div*/
+	width: 100%;
+	height: 50px;
+	/*边框线放在下面*/
+	border-bottom: 1px solid #cccccc;
+	padding: 5px;
+	/*使用此属性后 元素宽高固定，边距大小会从原大小中减去，也就是设置边距后元素宽高不表*/
+	box-sizing: border-box;
+	overflow: hidden;
+}
+	
+/*模态框主体*/
+.modal-box-content {
+	width: 100%;
+	height: 500px;
+	padding: 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+	
+/*模态框底部*/
+.modal-box-bottom {
+	width: 100%;
+	height: 15px;
+	border-top: 1px solid #cccccc;
+	padding: 0.5rem;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+
+/*模态框标题*/
+.modal-box-title {
+	/*使用浮动此属性可写可不写 浮动元素都会变成块元素*/
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    /*右浮动*/
+    float: left;
+}
+
+/*关闭按钮*/
+.modal-close {
+	/*绝对定位，相对于 static 定位以外的第一个父元素进行定位*/
+    position: absolute;
+    /*定位在顶部的右侧*/
+    top: 0;
+    right: 0;
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    background-color: white;
+    color: #a5a5a5;
+    /*outline: none;*/
+}

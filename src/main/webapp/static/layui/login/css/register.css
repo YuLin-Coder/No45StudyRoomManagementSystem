@@ -1,0 +1,48 @@
+﻿.user {
+	width: 330px;
+	margin: 0 auto;
+	margin-top: 3%;
+	border-radius: 4px;
+}
+
+.main {
+	width: 300px;
+	padding: 20px;
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 99;
+	text-align: center;
+}
+
+a {
+	color: mediumaquamarine;
+}
+
+a:hover {
+	color: aquamarine;
+}
+
+.code {
+	right: 0px;
+	top: 0px;
+	cursor: pointer;
+}
+
+.form_code {
+	position: relative;
+}
+
+.form_code .code {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	cursor: pointer;
+}
+
+.text-white {
+	color: whitesmoke;
+}
+
+.login_btn {
+	width: 100%;
+}

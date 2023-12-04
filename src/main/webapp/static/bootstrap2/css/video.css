@@ -1,0 +1,317 @@
+*,button{padding: 0;margin: 0}
+body{font-family: 微软雅黑 !important;}
+ul{list-style: none}
+
+.alarm_left,.alarm_right{float: left}
+.alarm_left{margin-right: 4px;height: 74px;width: 80px;text-align: center;line-height: 74px;font-family: 微软雅黑;font-size: 20px;font-weight: bold}
+.alarm_1{color:#084a82}
+.alarm_2{color:#b80000}
+.alarm_3{color:#823608}
+.alarm_right span{float:right;margin-left: 6px;}
+.alarm_right{width: 64%}
+.red{color: red}
+.green{color: green}
+.box3_check{margin: 0 0 6px 10px;padding-top: 14px}
+.box3_check label{font-size: 12px}
+.box3_check button{width: 14%;height: 30px;line-height: 30px;background-image: url(../img/li_06.png);;background-size:100% 100%;background-repeat:no-repeat;border: none;color:#fff;font-weight: bold;margin-left: 2%;border-radius: 4px}
+.box3_check button:hover{background-image: url(../img/li_09.png); }
+.box3_check input{background-color:transparent;border: none;;border: 1px #00fdff solid;color:#00d8fd;border-radius: 4px;line-height: 28px;width: 55%;height: 28px}
+
+
+
+*, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.index_video {
+    width: 350px;
+    height: 280px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999
+}
+
+/*.index_video{width: 400px;height: 300px;margin: auto; position: absolute;top: 0; left: 0; bottom: 0; right: 0;border-radius: 6px;z-index: 999 }
+*/
+.video_tops {
+    height: 60%;
+    width: 100%;
+    border-right: 1px #000 solid;
+    box-sizing: border-box;
+    background-color: #05195a;
+    margin: 0 0
+}
+
+.video_tops_ul {
+    height: 100%;
+}
+
+.video_tops_ul li {
+    line-height: 30px;
+    font-size: 10px;
+    padding: 4px 4%;
+    color: #fff;
+    border-bottom: 1px #336699 solid
+}
+
+.video_bottom {
+    height: 40%;
+    width: 100%;
+    background-color: #fff;
+    border-bottom-right-radius: 6px
+}
+
+/*视频监控*/
+.index_video_camera {
+    display: block;
+    background-color: #fff;
+}
+
+/*图片放大位*/
+.index_img_fd {
+    display: none;
+    width: 55%;
+    height: 621px;
+    background-color: #fff;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 6px;
+    z-index: 999
+}
+
+
+.index_img_fd h2 {
+    line-height: 30px;
+    font-size: 14px;
+    padding-left: 10px;
+    background-color: #404646;
+    border-bottom: 1px #000 solid;
+    color: #fff;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin: 0 !important;
+}
+
+.img_span {
+    float: right;
+    margin-right: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    width: 16px;
+    height: 30px
+}
+
+.index_video_camera_01 {
+    display: block;
+    width: 40%;
+    height: 400px;
+    background-color: #252728;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 15%;
+    bottom: 0;
+    right: 0;
+    border-radius: 6px;
+    z-index: 999
+}
+.index_video_camera_control{
+    display: block;
+    width: 40%;
+    height: 486px;
+    background-color: #252728;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 6px;
+    z-index: 999;
+    display: none;
+
+}
+.index_video_camera_01  .video_main>div{padding: 10px}
+/*.index_video_camera_01 .video_left img{width: 100%;height: 100%}*/
+.smallPic{width: 100%;height: 15%;margin-bottom: 4%;text-align: center}
+.smallPic img{width: 40%;height: 50px;border: 2px #fff solid}
+.bigPic{width: 100%;height: 74%;background-color: #576062; }
+.bigPic img{width: 100%;height: 240px;border: 2px #fff solid}
+.index_video_camera_01 .video_right000{padding:0 20px;color: #fff;line-height:32px;font-size: 14px;font-weight: normal !important; }
+.index_video_camera_01 .video_right000>div{border-bottom: 1px #2f3233 solid;padding-left: 6px}
+.video_left000 {
+    float: left;
+    width: 60%;
+    box-sizing: border-box;
+    height: 86%;
+}
+.video_left_gc{
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    height: 86%;
+}
+.video_right000 {
+    float: left;
+    width: 40%;
+    background-color: #252728;
+    border-bottom-right-radius: 6px;
+    height: 86%;
+}
+
+
+.video_left, .video_right {
+    float: left;
+    height: 86%;
+}
+
+.video_left {
+    width: 30%;
+    box-sizing: border-box;
+    background-color: #14171c;
+
+
+}
+
+.video_left h5  {
+    line-height: 30px;
+    font-size: 14px;
+    width: 100%;
+    padding: 4px 0;
+    text-align: center;
+    border: none;
+    color:#fff;
+    background-color: #197bd1
+}
+
+.video_right {
+    width: 70%;
+    background-color: #252728;
+    border-bottom-right-radius: 6px
+}
+
+.index_video_camera h2 {
+    line-height: 30px;
+    font-size: 14px;
+    padding-left: 10px;
+    background-color: #404646;
+    border-bottom: 1px #000 solid;
+    color: #fff;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin: 0 !important;
+}
+
+.video_span {
+    float: right;
+    margin-right: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    width: 16px;
+    height: 30px
+}
+
+/*分析详情*/
+.index_analysis_info {
+    width: 55%;
+    height: 78%;
+    background-color: rgba(53, 75, 90, 0.58);
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 6px;
+    z-index: 999
+}
+
+.index_analysis_info h2 {
+    line-height: 30px;
+    font-size: 14px;
+    padding-left: 10px;
+    background-color: #404646;
+    border-bottom: 1px #000 solid;
+    color: #fff;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin: 0 !important;
+}
+
+.analysis_span {
+    float: right;
+    margin-right: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    width: 16px;
+    height: 30px
+}
+
+.analysis_content {
+    height: 93%;
+    width: 100%;
+    border-right: 1px #000 solid;
+    box-sizing: border-box;
+    margin: 0 0.5%
+}
+
+
+
+
+
+
+
+ul{margin: 0;list-style: none}
+.video_left_ul .video_left_ul_active,.video_left_ul_01 .video_left_ul_active{background-color: #14171c;color: #fff}
+.video_left_div ul li,.video_left_div_01 ul li{line-height: 34px;font-size: 14px;cursor: pointer;color:#707783;padding-left: 30px }
+.video_left_div ul li:hover,.video_left_div_01 ul li:hover{color:#6681aa }
+.video_nav{padding-left: 180px;height: 46px;line-height: 46px;background-image: url(../img/title_01.png);background-repeat: no-repeat;background-position:20px,center;background-color: #1362a5}
+.video_nav_01{;height: 46px;line-height: 46px;background-color: #1362a5}
+.video_nav_01 ul li{float: left;line-height: 46px;color: #fff;cursor: pointer;padding: 0 20px;font-size: 16px }
+.video_nav ul li{float: left;line-height: 46px;color: #fff;cursor: pointer;padding: 0 20px;font-size: 16px }
+.video_nav_active{background-color: #1d90f1}
+.video_left_div_01 p{padding-left: 10px;line-height: 22px;margin-top: 10px;font-weight: bold;color: #2765c3}
+.video_time label{margin-left: 30px;font-weight: normal;color: #707783}
+.video_time{margin-bottom: 4px}
+.video_time input{border: 1px #326cd2 solid;background-color: #fff}
+.video_bot{height:40px;background-image: url(../img/13.png)}
+.video_bot_left ul li{float: left;margin: 9px 0 0 24px;cursor: pointer }
+.video_bot_right>ul>li{float: left;margin: 9px 24px 0 0 ;cursor: pointer }
+.video_bot_middle{margin-left: 20%}
+.video_bot_middle ul li{float: left;margin: 6px 10px 0 0 ;cursor: pointer}
+.began{width: 28px;height: 28px;background-image: url(../img/17.png)}
+.began1{width: 28px;height: 28px;background-image: url(../img/18.png)}
+.close{margin: 14px 10px 0 0 }
+.laydate_body .laydate_bottom {
+    height: 30px !important;
+}
+
+.l_left{float: left}
+.clear{clear: both}
+.r_right{float: right}
+.range-handle {
+    background-color: #fff;
+    border-radius: 100%;
+    cursor: move;
+    height: 16px !important;
+    left: 0;
+    top: -6px !important;
+    position: absolute;
+    width: 16px !important;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+.range-min, .range-max {
+    color: #fff !important;
+}

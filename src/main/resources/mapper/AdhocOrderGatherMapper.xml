@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.room.dao.AdhocOrderGatherMapper" >
+ <select id="orderGather" resultType="java.util.HashMap" parameterType="java.util.HashMap" >
+select  ifnull(sum(total_amount),
+0) as col1,
+DATE_FORMAT(create_time,
+'%Y-%m-%d') as col2
+ from order_info 
+ where 1=1 
+<if test="createTime1!=null and createTime1!=''">
+ and create_time  &gt;= #{createTime1}
+</if>
+<if test="createTime2!=null and createTime2!=''">
+ and create_time  &lt;= #{createTime2}
+</if>
+ and order_status!=#{orderStatus}
+group by DATE_FORMAT(create_time,'%Y-%m-%d')
+order by col2 asc
+</select>
+</mapper>

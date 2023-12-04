@@ -1,0 +1,614 @@
+/*all*/
+@charset "utf-8";
+/* CSS Document */
+.find_inputNew{width: 16%;height: 28px;border:solid 1px #ccc;border-radius: 4px;margin-right: 1%}
+.policP{
+    padding-top: 5px;
+}
+.policTool{
+    width: 100%;
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top:1px solid #CCCCCC;
+   text-indent: 10px;
+    background-color: #f2f5f7;
+}
+.policTool a{
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 10px;
+    color: #333333;
+}
+#table a{
+    color: #10c346;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+   background-image: url("../img/lookTail.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+}
+.polic_i{
+    width: 16px;
+    height: 16px;
+    position: relative;
+    display: inline-block;
+
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    top:3px;
+}
+.upFile_i{
+    background-image: url("../img/table_down.png");
+    margin-right: 5px;
+}
+.pAdd_i{
+    background-image: url("../img/add01.png");
+
+}
+.submit_i{
+    background-image: url("../img/submint.png");
+    margin-right: 5px;
+}
+.label_i{
+    background-image: url("../img/9.png");
+}
+.sent_i{
+    background-image: url("../img/sent_i.png");
+}
+.caseLook_i{
+     background-image: url("../img/caseLook.png");
+ }
+.caseLook01_i{
+    background-image: url("../img/icon_27.png");
+}
+.excel_i{
+    background-image: url("../img/excel.png");
+}
+.print_i{
+    background-image: url("../img/print.png");
+}
+.showH_i{
+    background-image: url("../img/look.png");
+    margin-right: 5px;
+}
+.Policdel_i{
+    background-image: url("../img/del01.png");
+}
+.PolicResh{
+    background-image: url("../img/res01.png");
+}
+.policTaliLeft{
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+
+}
+.policTailRight{
+    width: 19.5%;
+    float: right;
+    background-color: #ffffff;
+    border: 1px solid #CCCCCC;
+    margin-top: 5px;
+    height: 98%;
+
+}
+.tailTable{
+    width: 96%;
+    height: auto;
+    margin-left: 2%;
+   border-collapse: collapse;
+    border:1px solid #CCCCCC;
+    box-sizing: border-box;
+    margin-top: 5px;
+    background-color: #ffffff;
+}
+.tailTable td{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #333333;
+
+
+}
+.Tailtd_label{
+    color: #000000 !important;
+    font-weight: bold;
+    margin-right: 5px;
+    background-color: #f5f5f5 !important;
+    width: 10%;
+}
+.TailTableTd{
+    text-align: left;
+    text-indent: 10px;
+}
+.TailTableTd input[type=text]{
+    width: 96%;
+    height: 24px;
+    border:none;
+}
+.TailTableTd span{
+    margin-right: 10px;
+}
+.tdSpan{
+    margin-right: 10%;
+    margin-left: 1%;
+}
+.tdSpan01{
+    margin-left: 1%;
+}
+.policRightH{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #EEEEEE;
+    text-align: center;
+
+}
+.lawLeft01{
+    width: 30%;
+    float: left;
+    border:1px solid #CCCCCC;
+    background-color: #ffffff;
+    height: 585px;
+    display: inline-block;
+    padding-left: 5px;
+
+
+
+}
+.lawLeft02{
+    width: 59%;
+    float: left;
+    border:1px solid #CCCCCC;
+    background-color: #ffffff;
+    margin-left: 0.5%;
+    height: 100%;
+
+}
+.lawLeft03{
+    width: 68.5%;
+    float: left;
+    border:1px solid #CCCCCC;
+    background-color: #ffffff;
+    margin-left: 0.5%;
+    height: 100%;
+    display: inline-block;
+
+
+}
+.lawLeft04{
+    width: 80%;
+    float: left;
+    border:1px solid #CCCCCC;
+    background-color: #ffffff;
+    margin-left: 0.5%;
+    height: 100%;
+
+}
+.lawLeft05{
+    width: 78%;
+    float: left;
+    background-color: #ffffff;
+    margin-right: 0.5%;
+    height: 100%;
+
+}
+.contact{
+
+  padding-top: 10px;
+    padding-bottom: 10px;
+    width: 96%;
+    margin-left: 2%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow:-5px 0 5px #ccc, /*左边阴影*/
+    5px 0 5px #ccc, /*右边阴影*/
+    0 -5px 5px #ccc, /*顶部阴影*/
+    0 5px 5px #ccc; /*底边阴影*/
+    margin-top: 10px;
+    float: left;
+}
+
+.filedSetSTyle{
+    width: 98%;
+    margin-left: 1%;
+    height: 28%;
+    border:1px solid #CCCCCC;
+    font-size: 12px;
+    background-color: rgba(209, 236, 249, 0.35);
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.filedSetSTyle p{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-indent: 10px;
+    color: #475059;
+}
+.filedSetSTyle legend{
+    font-weight: bold;
+    text-indent: 10px;
+    color: #333333;
+}
+.law_i{
+    width: 16px;
+    height: 16px;
+    position: relative;
+    display: inline-block;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    top:3px;
+    margin-right: 5px;
+}
+.lawAdd_i{
+    background-image: url("../img/7_03.png");
+}
+.lawEdit_i{
+    background-image: url("../img/9.png");
+}
+.lawOld_i{
+    background-image: url("../img/add01.png");
+}
+.lawLeft03p01{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    color: red !important;
+    width: 98%;
+    margin-left: 1%;
+    font-weight: bold;
+}
+.lawLeft03p01 img{
+    width: 80%;
+    margin-left: 10%;
+}
+.pFile{
+    float: left;
+    margin-left: 5px;
+
+}
+.pFileUl{
+    list-style: none;
+    width: 96%;
+    margin-left: 2%;
+
+}
+.pFileUl li{
+    float: left;
+    width: 18%;
+    display: inline-block;
+    padding: 5px;;
+    background-color: rgba(213, 239, 255, 0.28);
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-right: 0.5%;
+
+}
+.pFileUl li:active{
+    background-color: rgba(213, 239, 255, 0.52);
+}
+
+.pFileUl li img{
+    float: left;
+
+}
+.creatFileBox{
+    width: 50%;
+  padding-bottom: 10px;
+    position: fixed;
+    left:25%;
+    top:150px;
+    border:1px solid #CCCCCC;
+    border-radius: 5px;
+    background-color:#ecf0f5;
+    box-shadow: 3px 3px 3px #888888;
+    display: none;
+}
+.creatFileBox p{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.creatFileH{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border:1px solid #CCCCCC;
+    text-indent: 5px;
+    color: #666;
+    background-color: #e5f1f7
+}
+.creatFileH01{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-bottom:1px solid #CCCCCC;
+    text-indent: 5px;
+    color: #666;
+    background-color: #e5f1f7;
+    margin-top:0px;
+    position: relative;
+    font-size: 12px;
+}
+.creatFileBox label{
+    width: 10%;
+    display: inline-block;
+    text-align: right;
+    font-size: 12px;
+}
+.creatFileInput{
+    width: 80%;
+    height: 28px;
+}
+.creatFileTexa{
+    width: 80%;
+    height: 80px;
+    resize: none;
+}
+.creatFileBoxFoot{
+    width: 100%;
+    text-align: center;
+float: left;
+    padding-top: 10px;
+}
+.but_save{width: 50px;height: 28px;line-height: 28px;border: none;background-color: #5cb85c;color: #fff;border-radius: 3px;cursor: pointer;margin-right: 10px}
+.but_esc{width: 50px;height: 28px;line-height: 28px;border: none;background-color: #ed932f;color: #fff;border-radius: 3px;cursor: pointer;margin-right: 10px}
+.upFileSpan{
+    float: right;
+    margin-right: 10px;
+}
+.upFileSpan a{
+    text-decoration: none;
+    color: #666666;
+}
+.upFileUl{
+    list-style: none;
+
+}
+.upFileUl li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.upFileUl li a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #666666;
+}
+.upFlieLi_i{
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    position: relative;
+    background-image: url("../img/leftjt03.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    top:2px;
+}
+.upFileDelA{
+    float: right;
+    margin-right: 3%;
+}
+.upFileDelA img{
+    width: 12px;
+    height: 12px;
+}
+.eviLabelHstyle{
+    border-bottom: 1px solid #CCCCCC;
+
+}
+.eviLabelHstyle a{
+    text-decoration: none;
+    color: #666;
+    padding-left: 5px;
+    padding-right: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border-right: 1px solid #CCCCCC;
+    background-color: #EEEEEE;
+  margin-right: 0px !important;
+
+}
+.eviAcitve{
+    background-color: #CCCCCC !important;
+    color: #142935 !important;
+}
+.eviLabeDiv{
+    display: none;
+}
+.policManUl{
+    list-style: none;
+    padding: 8px;
+    position: relative;
+
+}
+.policManUl li{
+    float: left;
+    display: inline-block;
+   text-align: center;
+    margin-right: 15px;
+
+
+}
+.policManUl li p{
+
+    font-size: 12px;
+}
+.policManUl li p input[type=radio]{
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+.flowBox{
+    width: 100%;
+    height: 100%;
+text-align: center;
+
+    background-image:url("../img/divbg.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.flowBox01{
+    width: 100%;
+ padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    text-align: center;
+
+
+
+}
+.flowBox img{
+    width: 98%;
+    margin-left: 1%;
+}
+.checkLowTop{
+    float: left;
+    width: 98%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #3e92c5;
+}
+.checkLowStep{
+    float: left;
+ width: 18%;
+
+    margin-top: 10px;
+    margin-right: 0.5%;
+
+
+   ;
+}
+.checkLowStep01{
+    float: left;
+    width: 8%;
+    margin-top: 20px;
+
+;
+}
+.checkFlowImg{
+    width: 30px;
+
+}
+.checkFlowText{
+    font-size: 14px;
+    color: #4c4b0f;
+    font-weight: bold;
+}
+.checkfolwDiv{
+    padding-top: 10px;
+    padding-right: 5px;
+   background-color: rgb(65, 183, 236);
+    border-radius: 5px;
+   float: left;
+  padding-bottom: 5px;
+    display: inline-block;
+    font-size: 12px;
+    width: 100%;
+    color: #ffffff !important;
+    box-shadow: 3px 3px 3px #888888;
+}
+.checkfolwDiv p{
+    text-align: left !important;
+    width: 100%;
+}
+.checkfolwDiv p label{
+    width: 80px;
+    display: inline-block;
+    text-align: right;
+}
+.checkRowIcon{
+    margin-top: 65px;
+}
+.newsDel_i{
+    background-image: url("../img/del01.png");
+    margin-right: 5px;
+}
+.userStop_i{
+    background-image: url("../img/stop_i.png");
+}
+.i_start{
+    width: 8px;
+    height: 8px;
+    position: relative;
+    display: inline-block;
+    background-image: url("../img/start.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.tailLeft01{
+    width: 98%;
+    float: left;
+    margin-left: 1%;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    /*border-radius: 5px;*/
+    /*margin-left: 0.5%;*/
+    margin-top: 20px;
+    background-color: #ffffff;
+    /*box-shadow: 3px 3px 3px #888888;*/
+
+}
+.tailLeft02{
+    width: 100%;
+    float: right;
+    background-image: url("../img/map_bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 540px;
+    margin-top: 20px;
+    margin-right: 1%;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+.tableImg{
+    width: 300px;
+    height: 350px;
+}
+.tableImg img{
+    width: 100%;
+    height: 100%;
+
+}
+.companyListUl{
+
+    width: 98%;
+    margin-left: 1%;
+    list-style: none;
+    font-size: 12px;
+}
+.conpanyListActive{
+    font-weight: bold;
+}
+.companyListUl li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.companyListUl li a{
+    text-decoration: none;
+    color: #333333;
+}
+.companyListUl li  span{
+    float: right;
+    margin-right: 5px;
+    color: #999;
+}
+.companyImg{
+    width: 450px;
+    height: 500px;
+}
+.policTool01{
+    width: 98%;
+    margin-left: 1%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}

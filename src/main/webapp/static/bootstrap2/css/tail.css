@@ -1,0 +1,86 @@
+/*详情页面*/
+::-webkit-scrollbar-track{border-radius: 10px;-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);}/*滚动条的滑轨背景颜色*/
+::-webkit-scrollbar-thumb{background-color: rgba(0,0,0,0.05);border-radius: 10px;-webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1);}/*滑块颜色*/
+::-webkit-scrollbar-thumb{background-color: rgba(0,0,0,0.2);border-radius: 10px;-webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1);}
+::-webkit-scrollbar{width: 16px;height: 16px;}/* 滑块整体设置*/
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb{border-radius: 999px;border: 5px solid transparent;}
+::-webkit-scrollbar-track{box-shadow: 1px 1px 5px rgba(0,0,0,.2) inset;}
+::-webkit-scrollbar-thumb{min-height: 20px;background-clip: content-box;box-shadow: 0 0 0 5px rgba(0,0,0,.2) inset;}
+::-webkit-scrollbar-corner{background: transparent;}/* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+*,h1,label,td,tr{padding: 0 ;margin: 0 }
+.l_left{float: left}
+.r_right{float: right}
+td{border: none !important;}
+.table tr td:nth-child(2n+1){text-align: right;font-size: 12px;width:84px;line-height: 28px;}
+.top_out{margin: 20px 0 20px 0}
+.top td{padding: 0 3px 8px 0 !important;}
+.top td span{color: red;margin:3px 1px 0 2px;display: inline-block ;float: right;vertical-align: middle;line-height: 28px;width: 6px;text-align: center;}
+.top select,.top input[type=text],.top input[type=password]{color: #999;text-align: left;width: 247px;height:28px;border-radius: 4px;font-size: 12px;border: 1px #ccc solid}
+.top td textarea{width: 586px;height: 70px;resize: none;border-radius: 4px;border: 1px #ccc solid}
+.notice_bot{position: fixed;bottom: 0;background-color: #ecf0f5;padding: 5px 0 5px 0;z-index:9999;border-top:1px #ccc solid;width: 100%;}
+.notice_bot>div{font-size: 12px;margin-left: 10px;color: #07141e;line-height: 28px}
+.notice_bot>div input{margin:0 2px 0 0;vertical-align: middle}
+.div_form>div{margin: 5px}
+.but_p{margin-right: 10px}
+.but_p button{width: 58px;height: 28px;line-height: 28px;border: none;background-color: #5cb85c;color: #fff;border-radius: 4px;cursor: pointer}
+.but_p .but_close{background-color: #d9534f;margin-left: 10px}
+.top .td_select{width: 78px;margin-right: 2px}
+
+/*log页面*/
+.form_label{width: 100%;line-height: 28px;display: block;text-align: left;font-size: 12px;  }
+.form_input{border-radius: 5px;font-size: 12px;height: 28px; width: 100%;border: 1px solid #CCCCCC;  }
+
+
+.table tr td:nth-child(2n+1){text-align: right;font-size: 12px;width:84px;line-height: 28px;}
+
+.top td{padding: 0 3px 8px 0 !important;}
+.top td span{color: red;margin:3px 1px 0 2px;display: inline-block ;float: right;vertical-align: middle;line-height: 28px;width: 6px;text-align: center;}
+.top .frist_input{width: 791px !important;}
+.top select,.top input[type=text],.top input[type=password]{color: #999;text-align: left;width: 342px;height:28px;border-radius: 4px;font-size: 12px;border: 1px #ccc solid}
+.top td textarea{width: 586px;height: 70px;resize: none;border-radius: 4px;border: 1px #ccc solid}
+
+.top .td_select{width: 78px;margin-right: 2px}
+.form_area{width: 791px}
+
+::-webkit-input-placeholder,:-ms-input-placeholder  {color:#999;}
+.table tr td:nth-child(2n+1){text-align: right;font-size: 12px;width:84px;line-height: 28px;}
+.top td{padding: 0 3px 8px 0 !important;}
+.top td span{color: red;margin:3px 1px 0 2px;display: inline-block ;float: right;vertical-align: middle;line-height: 28px;width: 6px;text-align: center;}
+.top .frist_input{width: 791px !important;}
+.top select,.top input[type=text],.top input[type=password]{text-align: left;width: 342px;height:28px;border-radius: 4px;font-size: 12px;border: 1px #ccc solid}
+.top td textarea{width: 586px;height: 70px;resize: none;border-radius: 4px;border: 1px #ccc solid}
+.top .td_select{width: 78px;margin-right: 2px}
+.form_area{width: 791px}
+
+
+/**{padding: 0;margin: 0}*/
+.notice_bot{position: fixed;bottom: 0;background-color: #ecf0f5;padding: 5px 0 5px 0;z-index:9999;border-top:1px #ccc solid;width: 100%;}
+.notice_bot>div{font-size: 12px;margin-left: 10px;color: #07141e;line-height: 28px}
+.notice_bot>div input{margin-right: 2px;vertical-align: middle}
+.div_form{margin:4% auto 0 auto;width: 90% }
+.div_form>div{margin: 5px 0 15px 0}
+.but_p{margin-right: 10px}
+.but_p button{width: 58px;height: 28px;line-height: 28px;border: none;background-color: #5cb85c;color: #fff;border-radius: 4px;cursor: pointer}
+.but_p .but_close{background-color: #d9534f;margin-left: 10px}
+.form_label{
+    line-height: 26px;
+    display: inline-block;
+    text-align: right;
+    font-size: 12px;
+    width: 16%;
+
+}
+.form_label span{color: red;margin-left: 4px;display: inline-block;line-height: 26px;vertical-align: middle}
+.form_input{
+    border-radius: 5px;
+    height: 32px;
+    width: 80%;
+    border: 1px solid #CCCCCC;
+    margin-right: 5px;
+}
+.but_p{text-align: center;}
+
+/*table2_tail*/
+.table2_top td span{color: red;margin:3px 1px 0 2px;display: inline-block ;float: right;vertical-align: middle;line-height: 28px;width: 6px;text-align: center;}
+.table2_top select,.table2_top input[type=text],.table2_top input[type=password],.table2_top input[type=email],#dropdownMenu1{text-align: left;width: 247px;height:28px;border-radius: 4px;font-size: 12px;border: 1px #ccc solid}
