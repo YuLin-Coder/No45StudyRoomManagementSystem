@@ -1,7 +1,8 @@
 <p><h1 align="center">45.基于springboot的自习室管理系统</h1></p>
 
-<p> 获取sql文件 QQ: 386869957 QQ群: 377586148 </p>
-<p> [推荐站点: 从戎源码网](https://armycodes.com/) </p>
+###  获取sql数据库文件: 从戎源码网 (https://armycodes.com/) QQ: 386869957 QQ群: 377586148 微信: yulin-coder
+###  所有系统目录地址: (https://github.com/YuLin-Coder/AllProjectCatalog)
+###  所有项目以及源代码本人均调试运行无问题 可支持远程安装部署调试、定制修改、代码讲解
 
 ## 简介
 
